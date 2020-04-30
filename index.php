@@ -12,6 +12,9 @@
       $response = "Aqui estoy que necesitas?";
       sendMessage($chatId, $response);
       break;
+    case '/chupaelperro':
+      $response = "Chupa el perro wey";
+      sendMessage($chatId, $response);
   }
 
   function sendMessage($chatId, $response){
