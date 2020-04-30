@@ -20,7 +20,8 @@
    if($message = "hola"){
       $response = "Dime que hay";
      sendMessage($chatId, $response);
-     if($message = "o"){
+   }else{
+    if($message = "o"){
       $response = "a";
      sendMessage($chatId, $response);
      }
