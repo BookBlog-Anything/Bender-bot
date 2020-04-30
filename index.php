@@ -8,14 +8,14 @@
 
   $message = $update["message"]["text"];
   switch($message){
-    case "/ayuda" ;
+    case '/ayuda' ;
       $response = "Aqui estoy que necesitas?";
-      sendmessage($chatId, $response);
+      sendMessage($chatId, $response);
       break;
   }
 
-  function sendmessage($chatId, $response){
-    $url = $GLOBALS[website].'sendmessage?chat_id='.$chatId. '&parse_mode=HTML&text='.urlencode($response);
+  function sendMessage($chatId, $response){
+    $url = $GLOBALS[website].'sendMessage?chat_id='.$chatId. '&parse_mode=HTML&text='.urlencode($response);
     file_get_contents($url);
   }
 ?>
