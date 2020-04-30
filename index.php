@@ -7,7 +7,7 @@
   $chatType = $update["message"]["chat"]["type"];
 
   $message = $update["message"]["text"];
-  /*switch($message){
+  switch($message){
     case '/ayuda' :
       $response = "Aqui estoy que necesitas?";
       sendMessage($chatId, $response);
@@ -15,22 +15,16 @@
     case '/chupaelperro':
       $response = "Chupa el perro wey";
       sendMessage($chatId, $response);
-  }*/
+  }
 
-  if($message = "hola"){
-    $response = "Hola que quieres?";
-    sendMessage($chatId, $response);
-  }else{
-    switch($message){
-    case '/ayuda' :
-      $response = "Aqui estoy que necesitas?";
-      sendMessage($chatId, $response);
-      break;
-    case '/chupaelperro':
-      $response = "Chupa el perro wey";
-      sendMessage($chatId, $response);
-  }
-  }
+   if($message = "hola"){
+      $response = "Dime que hay";
+     sendMessage($chatId, $response);
+     if($message = "o"){
+      $response = "a";
+     sendMessage($chatId, $response);
+     }
+   }
 
   function sendMessage($chatId, $response){
     $url = $GLOBALS[website].'/sendMessage?chat_id='.$chatId. '&parse_mode=HTML&text='.urlencode($response);
