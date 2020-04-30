@@ -3,16 +3,19 @@
   $update = file_get_contents("php://input");
   $update =json_decode($update, true);
 
-  $chatId = $update["Chat"],["Message"],["Id"];
-  $chatType = $update["Message"],["Chat"],["Type"];
+  $chatId = $update["chat"],["message"],["id"];
+  $chatType = $update["message"],["chat"],["type"];
 
-  switch(){
+  $message = $update["message"],["text"];
+  switch($message){
     case "/ayuda" :
       $response = "Aqui estoy que necesitas?";
+      sendmessage($chatId, $response);
       break;
   }
 
-  function sendmessage(){
-  
+  function sendmessage($chatId, $response){
+    $url = $GLOBALS[website].'sendmessage?chat_id='.$chatId. '&parse_mode=HTML&text='.urlencode($response);
+    file_get_contents($url);
   }
 ?>
