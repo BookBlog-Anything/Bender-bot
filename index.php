@@ -3,10 +3,10 @@
   $update = file_get_contents("php://input");
   $update =json_decode($update, true);
 
-  $chatId = $update["chat"],["message"],["id"];
-  $chatType = $update["message"],["chat"],["type"];
+  $chatId = $update["chat"]["message"]["id"];
+  $chatType = $update["message"]["chat"]["type"];
 
-  $message = $update["message"],["text"];
+  $message = $update["message"]["text"];
   switch($message){
     case "/ayuda" ;
       $response = "Aqui estoy que necesitas?";
