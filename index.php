@@ -17,7 +17,7 @@
       sendMessage($chatId, $response);
   }*/
 
-  if($message == "hola"){
+  if($message = "hola"){
     $response = "Hola que quieres?";
     sendMessage($chatId, $response);
   }else{
