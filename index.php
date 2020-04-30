@@ -1,7 +1,7 @@
 <?php
   $website = "https://api.telegram.org/bot1274888263:AAEAMc678Wj6k1F5U_xV8kOuyXSuPOP1To0";
   $update = file_get_contents("php://input");
-  $update =json_decode($update, true);
+  $update =json_decode($update, TRUE);
 
   $chatId = $update["chat"]["message"]["id"];
   $chatType = $update["message"]["chat"]["type"];
