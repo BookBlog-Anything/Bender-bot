@@ -21,8 +21,7 @@
       $response = "Dime que hay";
      sendMessage($chatId, $response);
    }else{
-    $response = "Dime aaque hay";
-     sendMessage($chatId, $response);
+   
    }
 
   function sendMessage($chatId, $response){
