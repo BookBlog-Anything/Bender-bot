@@ -17,14 +17,12 @@
       sendMessage($chatId, $response);
   }
 
-   if($message = "hola"){
+   if($message == "hola"){
       $response = "Dime que hay";
      sendMessage($chatId, $response);
    }else{
-    if($message = "o"){
-      $response = "a";
+    $response = "Dime aaque hay";
      sendMessage($chatId, $response);
-     }
    }
 
   function sendMessage($chatId, $response){
