@@ -3,7 +3,7 @@
   $update = file_get_contents("php://input");
   $update =json_decode($update, TRUE);
 
-  $chatId = $update["chat"]["message"]["id"];
+  $chatId = $update["message"]["chat"]["id"];
   $chatType = $update["message"]["chat"]["type"];
 
   $message = $update["message"]["text"];
