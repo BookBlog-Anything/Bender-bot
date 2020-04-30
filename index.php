@@ -8,7 +8,7 @@
 
   $message = $update["message"],["text"];
   switch($message){
-    case "/ayuda" :
+    case "/ayuda" ;
       $response = "Aqui estoy que necesitas?";
       sendmessage($chatId, $response);
       break;
