@@ -7,6 +7,10 @@
   $chatType = $update["message"]["chat"]["type"];
 
   $message = $update["message"]["text"];
+  $new_chat_members = $update["new_chat_members"];
+  /*if(){
+  
+  }*/
   switch($message){
     case '/ayuda' :
       $response = "Aqui estoy que necesitas?";
