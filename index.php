@@ -25,10 +25,12 @@ $website = "https://api.telegram.org/bot1274888263:AAEAMc678Wj6k1F5U_xV8kOuyXSuP
   if($message == "hola"){
    $response = "dime que hay";
     sendMessage($message, $response);
+  }else{
   }
-  if($message == "Hola"){
-    $response = "dime que hay";
+  if($message == "Sabes quien es don miguelo?"){
+    $response = "https://www.youtube.com/watch?v=AS9xiCUcuus";
     sendMessage($message, $response);
+  }else{
   }
 /*------------------------------------*/
 
