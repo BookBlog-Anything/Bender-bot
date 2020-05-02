@@ -4,8 +4,10 @@ require 'conn.php';
   	$responde = "Bienvenido al grupo";
 	sendMessage($new_chat_members, $response);
   }
-
+/* Requisito de datos  */
 require 'request.php';
+
+/* Comandos programados */
   switch($message){
     case '/ayuda' :
       $response = "Aqui estoy que necesitas?";
@@ -17,7 +19,7 @@ require 'request.php';
   }
 
 
-
+/* Envio o respuesta */
   function sendMessage($chatId, $response){
     $url = $GLOBALS[website].'/sendMessage?chat_id='.$chatId. '&parse_mode=HTML&text='.urlencode($response);
     file_get_contents($url);
