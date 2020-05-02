@@ -1,4 +1,4 @@
-<?php
+
   if($message == "hola"){
    $response = "dime que hay";
     sendMessage($message, $response);
@@ -7,4 +7,3 @@
     $response = "dime que hay";
     sendMessage($message, $response);
   }
-?>
