@@ -24,7 +24,7 @@
       sendMessage($chatId, $response);
   }
 
-   if($message == "hola" && "Hola"){
+   if($message == "hola" OR "Hola"){
       $response = "Dime que hay";
      sendMessage($chatId, $response);
    }else{
