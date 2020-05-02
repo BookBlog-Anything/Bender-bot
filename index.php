@@ -4,6 +4,8 @@ require 'conn.php';
   	$responde = "Bienvenido al grupo";
 	sendMessage($new_chat_members, $response);
   }
+
+require 'request.php';
   switch($message){
     case '/ayuda' :
       $response = "Aqui estoy que necesitas?";
