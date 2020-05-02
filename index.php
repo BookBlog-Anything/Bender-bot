@@ -11,9 +11,7 @@
   if($new_chat_members){
   	$responde = "Bienvenido al grupo";
 	sendMessage($new_chat_members, $response);
-  }else{
-
-	}
+  }
   switch($message){
     case '/ayuda' :
       $response = "Aqui estoy que necesitas?";
@@ -24,12 +22,7 @@
       sendMessage($chatId, $response);
   }
 
-   if($message == "hola","Hola"){
-      $response = "Dime que hay";
-     sendMessage($chatId, $response);
-   }else{
-   
-   }
+
 
   function sendMessage($chatId, $response){
     $url = $GLOBALS[website].'/sendMessage?chat_id='.$chatId. '&parse_mode=HTML&text='.urlencode($response);
