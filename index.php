@@ -40,6 +40,4 @@ require 'request.php';
 
 
 
-/*if there failes, use file recovery
-License: MIT |  Powered Heroku & Telegram llc
-*/
+
