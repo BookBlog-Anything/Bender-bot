@@ -11,4 +11,12 @@
 }else{
 
      }
+
+ if(isset($message)) {
+   if(isset($update['message']['new_chat_member'])){
+     $text = "hello";
+    $url ="https://api.telegram.org/bot1274888263:AAEAMc678Wj6k1F5U_xV8kOuyXSuPOP1To0/sendMessage?chat_id=". $chatId. "&text=" .$text;
+    file_get_contents($url);
+   }
+ }
 ?>
