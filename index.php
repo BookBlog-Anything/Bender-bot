@@ -21,20 +21,10 @@
       $response = "Chupa el perro wey";
       sendMessage($chatId, $response);
 	break;	  
-    case '/newpoll':
-   $poll = array(
-		'chat_id' => $chatId,
-		'options' => array('A','B','C'),
-		'question' => "Select that like you";
-		createPoll($chatId, $poll);
-   );
-      break;
   }
 
 
-	function createPoll($chatId, $poll){
- 		$url = $GLOBAL[website]. '/createPoll?chat_id$chatId&parse_mode=HTML&text='.urlencode($poll); 
-	}
+	
 /**/
 require 'request.php';
   
