@@ -5,14 +5,13 @@
    }else{
    
    }
-   if($message == "sabes quién es don miguelo"){
+   if($message == "sabes quien es don miguelo"){
      $response = "🥩Carne https://youtu.be/NjoZOYqgGwE";
      sendMessage($chatId, $response);
 }else{
 
      }
 
- if($update['new_chat_members	']) {
-   echo 'a';
- }
+if($message == "$username has joined group"){
+sendMessage($chatId,"Welcome $username!");}
 ?>
