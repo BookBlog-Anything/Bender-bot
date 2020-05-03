@@ -27,7 +27,7 @@
    }else{
    
    }
-   if($message == "sabes quien es don miguelo"){
+   if($message == "sabes quién es don miguelo"){
      $response = "carne";
      sendMessage($chatId, $response);
 }else{
