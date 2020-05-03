@@ -8,6 +8,7 @@
 
   $message = $update["message"]["text"];
   $new_chat_members = $update["new_chat_members"];
+
   /*if(){
   
   }*/
@@ -19,6 +20,7 @@
     case '/chupaelperro':
       $response = "Chupa el perro wey";
       sendMessage($chatId, $response);
+	break;	  
     case '/newpoll':
    $poll = array(
 		'chat_id' => $chatId,
