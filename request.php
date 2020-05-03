@@ -12,5 +12,7 @@
 
      }
 
-
+ if($update['new_chat_members	']) {
+   echo 'a';
+ }
 ?>
