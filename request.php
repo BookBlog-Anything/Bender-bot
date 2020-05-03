@@ -9,7 +9,6 @@
      $response = "🥩Carne https://youtu.be/NjoZOYqgGwE";
      sendMessage($chatId, $response);
 }else{
-     $response =" realmente no se";
-     sendMessage($chatId, $response);
+
      }
 ?>
