@@ -27,9 +27,9 @@ $website = "https://api.telegram.org/bot1274888263:AAEAMc678Wj6k1F5U_xV8kOuyXSuP
     sendMessage($chatId, $response);
   }else{
   }
-  if($message == "Sabes quien es don miguelo?"){
+  if($message == "sabes quien es don miguelo?"){
     $response = "https://www.youtube.com/watch?v=AS9xiCUcuus";
-    sendMessage($chatId), $response);
+    sendMessage($message), $response);
   }else{
   }
 /*------------------------------------*/
