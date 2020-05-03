@@ -12,6 +12,6 @@
 
      }
 
-if($message == "$username has joined group"){
-sendMessage($chatId,"Welcome $username!");}
+if($message == "$update['username'] has joined group"){
+sendMessage($chatId,"Welcome $update['username']!");}
 ?>
