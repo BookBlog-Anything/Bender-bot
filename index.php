@@ -28,7 +28,7 @@
    
    }
    if($message == "sabes quién es don miguelo"){
-     $response = "🥩Carne<br>https://youtu.be/NjoZOYqgGwE";
+     $response = "🥩Carne https://youtu.be/NjoZOYqgGwE";
      sendMessage($chatId, $response);
 }else{
      $response =" realmente no se";
