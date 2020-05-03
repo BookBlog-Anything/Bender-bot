@@ -27,7 +27,13 @@
    }else{
    
    }
-
+   if($message == "sabes quien es don miguelo"){
+     $response = "carne";
+     sendMessage($chatId, $response);
+}else{
+     $response =" realmente no se";
+     sendMessage($chatId, $response);
+     }
   function sendMessage($chatId, $response){
     $url = $GLOBALS[website].'/sendMessage?chat_id='.$chatId. '&parse_mode=HTML&text='.urlencode($response);
     file_get_contents($url);
