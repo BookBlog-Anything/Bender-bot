@@ -20,7 +20,8 @@
       $response = "Chupa el perro wey";
       sendMessage($chatId, $response);
   }
-
+/**/
+require 'request.php';
    if($message == "hola"){
       $response = "Dime que hay";
      sendMessage($chatId, $response);
