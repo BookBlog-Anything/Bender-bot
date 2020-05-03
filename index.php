@@ -32,8 +32,7 @@
   }
 
 
-	function createPoll($chatId, $poll)
-	{
+	function createPoll($chatId, $poll){
  		$url = $GLOBAL[website]. '/createPoll?chat_id$chatId&parse_mode=HTML&text='.urlencode($poll); 
 	}
 /**/
