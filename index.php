@@ -24,8 +24,7 @@
 		'chat_id' => $chatId,
 		'options' => array('A','B','C'),
 		'question' => "Select that like you";
-		createPoll($chatId, $poll);
-    	);
+		createPoll($chatId, $poll););
       break;
   }
 
