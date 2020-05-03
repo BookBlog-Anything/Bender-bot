@@ -9,9 +9,10 @@
   $message = $update["message"]["text"];
   $new_chat_members = $update["new_chat_members"];
 
-  /*if(){
-  
-  }*/
+  if(isset($new_chat_members){
+  	 $response = "Bienvenido";
+      sendMessage($chatId, $response);
+  }
   switch($message){
     case '/ayuda' :
       $response = "Aqui estoy que necesitas?";
