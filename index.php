@@ -22,19 +22,7 @@
   }
 /**/
 require 'request.php';
-   if($message == "hola"){
-      $response = "Dime que hay";
-     sendMessage($chatId, $response);
-   }else{
-   
-   }
-   if($message == "sabes quién es don miguelo"){
-     $response = "🥩Carne https://youtu.be/NjoZOYqgGwE";
-     sendMessage($chatId, $response);
-}else{
-     $response =" realmente no se";
-     sendMessage($chatId, $response);
-     }
+  
   function sendMessage($chatId, $response){
     $url = $GLOBALS[website].'/sendMessage?chat_id='.$chatId. '&parse_mode=HTML&text='.urlencode($response);
     file_get_contents($url);
