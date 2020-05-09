@@ -7,11 +7,13 @@
   $chatType = $update["message"]["chat"]["type"];
 
   $message = $update["message"]["text"];
-  $new_chat_members = $update["new_chat_members"];
+  $new_chat_members = $update["new_chat_members"]["chat"]["id"]["text"];
 
-  if(isset($new_chat_members){
+  if($new_chat_members){
   	 $response = "Bienvenido";
       sendMessage($chatId, $response);
+  }else{
+  
   }
   switch($message){
     case '/ayuda' :
