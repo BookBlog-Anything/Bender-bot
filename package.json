@@ -1,0 +1,26 @@
+{
+  "name": "bender_js",
+  "version": "3.0.0",
+  "description": "Esto es un bot de Telegram para conversar y interactuar en grupo ",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "nodemon": "nodemon src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v2414/Bender_Js.git"
+  },
+  "author": "Valdez Alejandro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/v2414/Bender_Js/issues"
+  },
+  "homepage": "https://github.com/v2414/Bender_Js#readme",
+  "dependencies": {
+    "telegraf": "^3.38.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
