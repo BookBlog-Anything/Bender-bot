@@ -1,11 +1,16 @@
 const express = require('express')
+const http = require('http')
 const app = express()
 const path = require('path')
 const port = process.env.PORT || 3000
 
-app.use(path.join(__dirname,'/src'))
-app.get('/', function (req, res ){
- res.send('Run')
+const server = http.createServer((req, res) =>{
+  res.statusCode =200;
+  res.setHeader('Content-Type', 'text/plain')
+  res.end('Lol')
 })
 
-app.listen(port)
+
+server.listen(app.get(port),()=>{
+  console.log('El servidor corre en el puerto '${port})
+})
