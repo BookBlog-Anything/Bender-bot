@@ -9,5 +9,5 @@ http.createServer(function(request, response) {
 }).listen(process.env.PORT)
 
 app.get('/', function(request, response) {
-	response.send("Lol")
+	response.send("Lo l")
 })
