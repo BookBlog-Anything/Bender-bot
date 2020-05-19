@@ -1,5 +1,5 @@
 const Telegraf = require('node-telegram-bot-api')
-const bot = new Telegraf("1274888263:AAEAMc678Wj6k1F5U_xV8kOuyXSuPOP1To0",{polling:true})
+const bot = new Telegraf(process.env.TELEGRAM_API_TOKEN ,{polling:true})
 //Lol ya funciona
 //bot.on('new_chat_members', (ctx) =>{
    //ctx.reply("Welcome "+ ctx.chat.username.new_chat_members)
