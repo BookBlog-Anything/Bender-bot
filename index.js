@@ -3,8 +3,6 @@ var app = express()
 
 const port = process.env.PORT || 3000
 
-app.get('/', (req, res) => {
-//
 const Telegraf = require('node-telegram-bot-api')
 const bot = new Telegraf("1274888263:AAEAMc678Wj6k1F5U_xV8kOuyXSuPOP1To0",{polling:true})
 
@@ -39,8 +37,6 @@ bot.on('message',function(msg, match){
 //})
 //bot.start((ctx) =>    console.log(ctx.message.chat.id))
 //bot.launch()
-//
-})
 
 app.listen(port, ()=> console.log("El servidor corre en el puerto ${port}"))
 
