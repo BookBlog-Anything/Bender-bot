@@ -4,8 +4,7 @@
   "description": "Esto es un bot de Telegram para conversar y interactuar en grupo ",
   "main": "src/main.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon src/main.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
