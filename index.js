@@ -4,7 +4,7 @@ var app = express()
 const port = process.env.PORT || 3000
 
 const Telegraf = require('node-telegram-bot-api')
-const bot = new Telegraf("1274888263:AAEAMc678Wj6k1F5U_xV8kOuyXSuPOP1To0",{polling:true})
+const bot = new Telegraf("1120756525:AAFZ99VjM4iLhehzA2dyQs0yJoE-sos0mL8",{polling:true})
 
 //bot.on('new_chat_members', (ctx) =>{
    //ctx.reply("Welcome "+ ctx.chat.username.new_chat_members)
