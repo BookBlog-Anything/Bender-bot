@@ -12,6 +12,7 @@ const bot = new Telegraf( token,{polling:true})
 
   //
 app.get('/',(req, res) =>{
+res.send("hello ")
 bot.on('message',function(msg, match){
   console.log(msg);
   var description =  "\nEste es una comunidad de estudio de tecnologia en diferentes areas como:\n\nredes | seguridad | cloud | virtualizacion | servidores | VoIP,etc...\n \nEste es el Link para que se registren en la plataforma de Cisco Webex para futuras video conferencias: https://cart.webex.com/sign-up-webex \n \n Si tiene algun tipo de archivo o documento que quiera compartir porfavor conviertarlo en formato .rar y luego envielo. "
@@ -35,7 +36,6 @@ bot.on('message',function(msg, match){
 	
     }
 	})
-app.listen(port,()=>console.log("Funciona"))
 
 
   })
