@@ -10,7 +10,7 @@ bot.on('message',function(msg, match){
   //
      //Function for sendPoll
     function Poll(bot){
-          bot.sendPoll(chatId,"Cual es tu preferencia de estudio",answer, opts)
+          bot.sendPoll(msg.chat.id,"Cual es tu preferencia de estudio",answer, opts)
 
    }
    // 
