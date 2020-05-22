@@ -21,7 +21,7 @@ bot.on('message',function(msg, match){
 
 
 
-     if(msg.new_chat_members != undefined){
+     if(msg.new_chat_members){
          bot.deleteMessage(msg.chat.id, messageId)
        bot.sendMessage(msg.chat.id, "¡Hola " + firstName + ", Bienvenido a la comunidad de Technology Study " + msg.chat.title+ description )
       bot.sendPoll(msg.chat.id,"Cual es tu preferencia de estudio",options)
