@@ -28,6 +28,6 @@ bot.on('message',function(msg, match){
        bot.sendMessage(msg.chat.id, "¡Hola " + firstName + ", Bienvenido a la comunidad " + msg.chat.title+ description )
  bot.sendPoll(msg.chat.id,"Cual es tu preferencia de estudio",answer, opts)    
 //
-   
+     }
   })
 //end
