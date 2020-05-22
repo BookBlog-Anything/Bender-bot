@@ -10,7 +10,7 @@ const bot = new Telegraf(process.env.TELEGRAM_API_TOKEN ,{polling:true})
   //
 bot.on('message',function(msg, match){
   console.log(msg);
-  const description =  "Este es una comunidad de estudio de tecnologia en diferentes areas como:\nredes | seguridad | cloud | virtualizacion | servidores | VoIP,etc...\n\nEste es el Link para que se registren en la plataforma de Cisco Webex para futuras video conferencias: https://cart.webex.com/sign-up-webex \n\nSi tiene algun tipo de archivo o documento que quiera compartir porfavor conviertarlo en formato .rar y luego envielo. "
+  const description =  "\nEsto es una comunidad de estudio de tecnologia en diferentes areas como:\nredes | seguridad | cloud | virtualizacion | servidores | VoIP,etc...\n\nEste es el Link para que se registren en la plataforma de Cisco Webex para futuras video conferencias: https://cart.webex.com/sign-up-webex \n\nSi tiene algun tipo de archivo o documento que quiera compartir porfavor conviertarlo en formato .rar y luego envielo. "
   const answer =["Redes","Seguridad","Cloud","Virtualizacion","Servidores","VoIP","Otros"]
 
 const chatId = msg.chat.id
