@@ -8,12 +8,7 @@ bot.on('message',function(msg, match){
   const description =  "\nEsta es una comunidad de estudio de tecnologia en diferentes areas como:\nRedes | Seguridad | Cloud | Virtualizacion | Servidores | VoIP,etc...\n\nEste Link es para que te registre en la plataforma de Cisco Webex para futuras video conferencias: https://cart.webex.com/sign-up-webex \n\nSi tienes algun tipo de archivo o documento que quieres compartir, porfavor que sea formato .rar y luego envielo. "
   const answer =["Redes","Seguridad","Cloud","Virtualizacion","Servidores","VoIP","Otros"]
   //
-     //Function for sendPoll
-    function Poll(bot){
-          bot.sendPoll(msg.chat.id,"Cual es tu preferencia de estudio",answer, opts)
 
-   }
-   // 
    
    //Let
    const chatId = msg.chat.id
@@ -31,8 +26,8 @@ bot.on('message',function(msg, match){
      if(msg.new_chat_members){
          //bot.deleteMessage(msg.chat.id, messageId)
        bot.sendMessage(msg.chat.id, "¡Hola " + firstName + ", Bienvenido a la comunidad " + msg.chat.title+ description )
-      Poll()
-    }
+ bot.sendPoll(msg.chat.id,"Cual es tu preferencia de estudio",answer, opts)    
 //
+   
   })
 //end
