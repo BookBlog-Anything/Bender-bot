@@ -18,13 +18,16 @@ bot.on('message',function(msg, match){
      var newUserId = msg.new_chat_member.id
      var firstName = msg.new_chat_member.first_name
      var messageId = msg.message_id
-
+     var extra ={
+       'is_anonymous': true,
+        'allows_multiple_answers': true
+        }
 
 
      if(msg.new_chat_members){
-         bot.deleteMessage(msg.chat.id, messageId)
+         //bot.deleteMessage(msg.chat.id, messageId)
        bot.sendMessage(msg.chat.id, "¡Hola " + firstName + ", Bienvenido a la comunidad de Technology Study " + msg.chat.title+ description )
-      bot.sendPoll(msg.chat.id,"Cual es tu preferencia de estudio",options)
+      bot.sendPoll(msg.chat.id,"Cual es tu preferencia de estudio",options,extra)
 
     }
 
