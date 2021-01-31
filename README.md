@@ -1,4 +1,4 @@
-<img src="https://www.dropbox.com/s/5zja9cz3vsq4658/Bender_l.png?dl=0">
+<img src="https://www.dropbox.com/s/5zja9cz3vsq4658/Bender_l.png">
 
 <a href="https://github.com/v2414/benderbot-/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
 
