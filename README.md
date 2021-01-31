@@ -1,4 +1,6 @@
 # Bender Bot
+<img src="https://img.shields.io/badge/license-MIT-green">
+[![Heroku](https://heroku-badge.herokuapp.com/?app=botbender-telegram)]
 By: <b>BookBlog Group</b>
 
 ## Introduction
