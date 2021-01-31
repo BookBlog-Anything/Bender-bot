@@ -1,6 +1,6 @@
-#Bender Bot
+# Bender Bot
 
-##Introduction
+## Introduction
 
 Bender bot is a bot for support message and stay chill whould that bot is working for a better "Message Control", "New Functions" and + More
 
