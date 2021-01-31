@@ -1,6 +1,9 @@
 # Bender Bot
-<img src="https://img.shields.io/badge/license-MIT-green">
-<img src="https://github.com/gregsadetsky/heroku-ci-badge/raw/master/badges/succeeded.svg">
+<ul>
+  <img src="https://img.shields.io/badge/license-MIT-green">
+  <img src="https://img.shields.io/badge/build-passing-brightgreen">
+  <img src="https://github.com/gregsadetsky/heroku-ci-badge/raw/master/badges/succeeded.svg">
+</ul>
 By: <b>BookBlog Group</b>
 
 ## Introduction
